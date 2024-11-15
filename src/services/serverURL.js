@@ -1,2 +1,2 @@
-const SERVERURL = "http://localhost:3000"
+const SERVERURL = "https://empserver-9fsy.onrender.com"
 export default SERVERURL

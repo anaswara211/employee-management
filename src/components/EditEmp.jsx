@@ -29,7 +29,7 @@ const EditEmp = () => {
         if (result.status >= 200 && result.status < 300) {
          
           navigate('/');
-          alert('Employee updated successfully');
+          // alert('Employee updated successfully');
         }
       } catch (err) {
         console.error(err);

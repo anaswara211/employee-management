@@ -53,21 +53,12 @@ const Add = () => {
       }
     }
 
-    if (!status) {
-      newErrors.status = "Please select a status.";
-      hasError = true;
-    }
-
     setErrors(newErrors);
 
     if (!hasError) {
       try {
         const result = await saveEmpAPI(empDetailes);
-        if (result.status >= 200 && result.status < 300) {
-          alert("Employee details added successfully");
-        } else {
-          console.error(result);
-        }
+      
       } catch (err) {
         console.error(err);
       }
